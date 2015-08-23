@@ -7,10 +7,12 @@ describe('top domain', function() {
   });
 
   it('should return top domain from url with complex top level doman (eg. .co.uk)', function() {
-    assert.equal(topDomain('http://amazon.co.uk/'), 'amazon.co.uk');
+    assert.equal(topDomain('https://amazon.co.uk/'), 'amazon.co.uk');
   });
 
-  it('should return top domain from url with subdomains', function() {
-    assert.equal(topDomain('http://www.amazon.co.uk/'), 'amazon.co.uk');
+  it('should return top domain from url with subdomains and parameters', function() {
+    assert.equal(topDomain(
+      'http://www.amazon.co.uk/Pickle-Parade-1-Piece-Confused-Squirrel/dp/B00H9E7F44/ref=sr_1_2?ie=UTF8&qid=1440355451&sr=8-2&keywords=squirrel'
+    ), 'amazon.co.uk');
   });
 });
