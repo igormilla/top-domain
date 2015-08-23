@@ -1,0 +1,17 @@
+{
+  "name": "top-domain",
+  "version": "0.0.1",
+  "description": "Extracts top domain from a given URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*.spec.js"
+  },
+  "keywords": [
+    "domain"
+  ],
+  "author": "Igor Milla <igor.fsp.milla@gmail.com> (igormilla.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
