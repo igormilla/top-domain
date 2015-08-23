@@ -6,10 +6,14 @@
   "scripts": {
     "test": "mocha tests/**/*.spec.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igormilla/top-domain"
+  },
   "keywords": [
     "domain"
   ],
-  "author": "Igor Milla <igor.fsp.milla@gmail.com> (igormilla.com)",
+  "author": "Igor Milla <igor.fsp.milla@gmail.com> (http://igormilla.com)",
   "license": "MIT",
   "devDependencies": {
     "mocha": "^2.2.5"
