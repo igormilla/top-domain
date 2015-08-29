@@ -14,11 +14,11 @@ npm and node.js friendly version of [segmentio/top-domain](https://github.com/se
 
   var topDomain = require('top-domain');
 
-  console.log(topDomain('http://amazon.com/'));
-  //amazon.com
-  console.log(topDomain('http://amazon.co.uk/'));
-  //amazon.co.uk
-  console.log(topDomain('http://www.amazon.co.uk/Pickle-Parade-1-Piece-Confused-Squirrel/dp/B00H9E7F44/'));
-  //amazon.co.uk
+  console.log(topDomain('http://exampl.com/'));
+  //exampl.com
+  console.log(topDomain('http://exampl.co.uk/'));
+  //exampl.co.uk
+  console.log(topDomain('http://www.exampl.co.uk/parameter1/parameter2/'));
+  //exampl.co.uk
 
 ```
