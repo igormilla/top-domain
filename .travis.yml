@@ -3,3 +3,8 @@ node_js:
   - "0.12"
   - "0.11"
   - "0.10"
+addons:
+  code_climate:
+    repo_token: de0d02914cbeed97b294613f51827be28288162fafc3607450341fbd47eca71b
+after_script:
+  - codeclimate-test-reporter < lcov.info
