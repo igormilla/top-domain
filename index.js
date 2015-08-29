@@ -1,9 +1,21 @@
 var url = require('url');
 
-module.exports = function (urlStr) {
+module.exports = function(str) {
+  str = str.toLowerCase();
 
-  var host     = url.parse(urlStr).host
-    , topLevel = host.match(/[a-z0-9][a-z0-9\-]*[a-z0-9]\.[a-z\.]{2,6}$/i);
+  var topLevelDomain,
+    matched,
+    domain = /[a-z0-9][a-z0-9\-]*[a-z0-9]\.[a-z\.]{2,6}$/i,
+    parsedUrl = url.parse(str);
 
-  return topLevel ? topLevel[0] : host;
+  if (parsedUrl.host !== null) {
+    matched = parsedUrl.host.match(domain);
+    topLevelDomain = matched ? matched[0] : host;
+  } else {
+    matched = parsedUrl.path.match(domain);
+    topLevelDomain = matched ? matched[0] : "";
+  }
+
+  return topLevelDomain;
+
 };
