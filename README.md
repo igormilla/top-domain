@@ -1,6 +1,4 @@
-# top-domain
-[![Build Status](https://travis-ci.org/igormilla/top-domain.svg)](https://travis-ci.org/igormilla/top-domain)
-[![Test Coverage](https://codeclimate.com/github/igormilla/top-domain/badges/coverage.svg)](https://codeclimate.com/github/igormilla/top-domain/coverage)
+# top-domain [![Build Status](https://travis-ci.org/igormilla/top-domain.svg)](https://travis-ci.org/igormilla/top-domain)
 
 Extract top domain from a given url.
 
