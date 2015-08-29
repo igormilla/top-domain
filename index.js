@@ -10,7 +10,7 @@ module.exports = function(str) {
 
   if (parsedUrl.host !== null) {
     matched = parsedUrl.host.match(domain);
-    topLevelDomain = matched ? matched[0] : host;
+    topLevelDomain = matched ? matched[0] : parsedUrl.host;
   } else {
     matched = parsedUrl.path.match(domain);
     topLevelDomain = matched ? matched[0] : "";
