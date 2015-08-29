@@ -1,6 +1,6 @@
 {
   "name": "top-domain",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Extracts top domain from a given URL",
   "main": "index.js",
   "scripts": {
